@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos - Protea Flowers</title>
+    <link rel="stylesheet" href="estiloCatalogos.css">
+    <link rel="stylesheet" href="../../components/everyPages.css">
+  
+  <!-- Importação do jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+
+</head>
+<body>
+	<header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span class="Central-vendedor buttons">Central do Vendedor</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Torne-se Vendedor</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                <img src="../../components/images/icon-search.png" alt="">
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Buscar..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Cadastre-se</a></span>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+            <nav>
+                <span class="buttons"><a href="../home/index.html">HOME</a></span>
+                <span class="buttons"><a href="../produtos/produtos.html">PRODUTOS</a></span>
+                <span class="buttons" style="color: #0F270F">CATÁLOGOS</span>
+                <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NOSSA HISTÓRIA</a></span>
+                <span class="buttons"><a href="../contato/contato.html">CONTATO</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="../../components/images/🦆 icon _person_.png" alt="Ícone de pessoa">
+                <img class="icon-header" src="../../components/images/🦆 icon _bell_.png" alt="ícone de sino">
+                <a href="../carrinho_compras/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/🦆 icon _cart_.png" alt="Ícone de carrinho">
+                </a>
+            </div> 
+        </div>
+        <hr>
+    </header>
+
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <header id="box-principal-mobile">
+        <div class="box-logo-menu-mobile">
+            <img class="menu-img" src="../../components/images/meu.png">
+             <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+        </div>
+        <div class="box-menu-mobile">
+            <nav class="botoes-vendedor">
+                 <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Cadastre-se</a></span>
+                <span class="Central-vendedor buttons">Central do Vendedor</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Torne-se Vendedor</a></span>
+            </nav>
+            <div class="header-top">
+                <div class="box-pesquisa-icons-mobile">
+                    <div class="barra-pesquisa">
+                        <img src="../../components/images/icon-search.png" alt="">
+                        <input 
+                        type="search" 
+                        name="pesquisar" 
+                        id="input-pesquisa"
+                        placeholder="Buscar..." onclick="this.placeholder=''">
+                    </div>
+                     <div class="icons-mobile">
+                        <img class="icon-header entrar" src="../../components/images/🦆 icon _person_.png" alt="Ícone de pessoa">
+                        <img class="icon-header" src="../../components/images/🦆 icon _bell_.png" alt="ícone de sino">
+                        <a href="../carrinho_compras/carrinhoCompras.html">
+                            <img class="icon-header" src="../../components/images/🦆 icon _cart_.png" alt="Ícone de carrinho">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="nav-pages-mobile">
+                    <span class="buttons" style="color: #0F270F"><a href="../home/index.html">HOME</a></span>
+                    <span class="buttons"><a href="../produtos/produtos.html">PRODUTOS</a></span>
+                    <span class="buttons"><a href="../catalogos/catalogos.html">CATALOGOS</a></span>
+                    <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NOSSA HISTÓRIA</a></span>
+                    <span class="buttons"><a href="../contato/contato.html">CONTATO</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <main>
+        <section class="box-central">
+            <div class="barra-lateral">
+                <br>
+
+                <div class="info-breadcrumbs">
+                    <span class="breadcrumbs">Home |<span> Catálogos</span></span>
+                </div>
+                
+                <div class="box-filtro">
+                    <img src="images/filtro.png">
+                    <h3>Filtros</h3>
+                </div>
+                <div class="box-categorias">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Flores tropicais de verão</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Flores tropicais de inverno</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Flores de primavera</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Sementes</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Folhagens</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="box-categorias">
+                    <h3>Enviado de:</h3>
+                    <ul>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Internacional</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Nacional</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Pernambuco</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>São Paulo</li>
+                        </div>
+                       
+                    </ul>
+                </div>
+               <div class="box-categorias">
+                    <h3>LOJAS</h3>
+                    <ul>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Mais vendidos</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Indicados</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Melhores avaliações</li>
+                        </div>
+                       
+                    </ul>
+                </div>
+                 
+                 <div class="box-categorias">
+                    <h3>FAIXA DE PREÇOS</h3>
+                    <ul>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>R$ 50,00</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>R$ 75,00</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>R$ 100,00</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>R$ 200,00</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="box-categorias">
+                    <h3>PROMOÇÕES</h3>
+                    <ul>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li> Frete grátis acima de R$ 50,00</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Novos produtos</li>
+                        </div>
+                        <div class="box-opcoes">
+                            <img src="images/marcador.png">
+                            <li>Produtos com desconto</li>
+                        </div>
+                    </ul>
+                </div>
+                 <div class="box-categorias">
+                    <h3>AVALIAÇÕES</h3>
+                    <ul>
+                        <li>
+                            <img class="avaliacao" src="images/avaliacao.png">
+                        </li>
+                        <li>
+                            <img class="avaliacao" src="images/avaliacao.png">
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="botton-lateral">Aplicar Filtros</button>
+                <button class="botton-lateral">Limpar Filtros</button>
+            </div>
+
+            <div class="box-produtos">
+                <div class="box-titulo">
+                    <h3>CATÁLOGOS EM EXIBIÇÃO</h3>
+                </div>
+                <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/home-decor-1.png">
+                            </div>
+                        </div>
+                         <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/home-decor-2.png">
+                            </div>
+                        </div>
+
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/home-decor-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>HOME DECOR</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/jardinagem-1.png">
+                            </div>
+                        </div>
+                         <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/jardinagem-2.png">
+                            </div>
+                        </div>
+
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/jardinagem-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>JARDINAGEM</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                 <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/festividades-1.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/festividades-2.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/festividades-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>FESTIVIDADES</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                 <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/cerimonias-1.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/cerimonias-2.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/cerimonias-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                        <h4>CERIMONIAS</h4>
+                        <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                 <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/sementes.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/sementes.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/sementes.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>SEMENTES</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                 <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/folha.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/folha.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/folha.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>FOLHAGENS</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/home-decor-1.png">
+                            </div>
+                        </div>
+                         <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/home-decor-2.png">
+                            </div>
+                        </div>
+
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/home-decor-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>HOME DECOR</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/jardinagem-1.png">
+                            </div>
+                        </div>
+                         <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/jardinagem-2.png">
+                            </div>
+                        </div>
+
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/jardinagem-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>JARDINAGEM</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                 <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/festividades-1.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/festividades-2.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/festividades-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                            <h4>FESTIVIDADES</h4>
+                            <span>Ver mais >></span>
+                    </div>
+                </div> 
+
+                 <div class="box-container">
+                    <div class="box-central-catalogos">
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/cerimonias-1.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/cerimonias-2.png">
+                            </div>
+                        </div>
+                        <div class="box-demonstracao">
+                            <div class="box-info-produtos">
+                                <img src="images/cerimonias-3.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-texto">
+                        <h4>CERIMONIAS</h4>
+                        <span>Ver mais >></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Home | Entrar</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN</h3>
+                    <br>
+                    <span class="text-modal">Bem vindo de volta ao nosso Jardim!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  vendedor-modal">
+            <div class="modal vendedor">
+                <span class="legenda">Home | Central do Vendedor | Login</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>LOGIN DO VENDEDOR</h3>
+                    <br>
+                    <span class="text-modal">Bem vindo de volta ao nosso Jardim!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/button-google.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Senha">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">Esqueceu a senha?</span>
+                            <span class="text-gray">Precisa de ajuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+
+    	<footer>
+            <h2>Entre em contato para mais informações</h2>
+            <div class="box-footer">
+                <div class="box-left-footer">
+                    <ul>
+                        <li>Rua das Colhetas, 258-A, Apipucos</li>
+                        <li>Recife, PE - Brasil</li>
+                        <li>CEP: 10254-330</li>
+                        <br>
+                        <br>
+                        <li>P&F DECORAÇÃO E AMBIENTAÇÃO</li>
+                        <li>LTDA 08.591.212/0004-07</li>
+                    </ul>
+                </div>
+
+                <div class="logo-footer">
+                     <img src="../../components/images/logo.png">
+                </div>
+                
+                <div class="box-rigth-footer">
+                    <span>Encontre-nos nas redes sociais</span>
+                    <ul>
+                        <li>
+                            <img src="../../components/images/facebook.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/instagram.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/whatsapp.png">
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="../../components/images/logotipo-do-pinterest.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/twitter.png">
+                        </li>
+                        <li>
+                            <img src="../../components/images/youtube.png">
+                        </li>
+                    </ul>
+                    <span>contato@proteaflowers.com.br</span>
+                </div>
+            </div>
+            
+        </footer>
+    </main>
+   <script type="text/javascript" src="../../components/script.js"></script>
+</body>
+</html>
