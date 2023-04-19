@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+html, body {
+    font-size: 10px;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    background-color: #efefee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Scada', 'son-serif';
+    color: #FFFFFF;
+    font-weight: 400;
+}
+#box-principal-mobile{
+        display: none;
+    }
+.botoes-vendedor span, .botoes-vendedor span a, .botoes-entrar-cadastrar span, .botoes-entrar-cadastrar span a{
+    color:#0F270F;
+}
+
+.botoes-vendedor span:hover {
+    color:#efefee;
+}
+.botoes-vendedor span a:hover {
+    color:#efefee;
+}
+
+.botoes-entrar-cadastrar span:hover {
+    color:#efefee;
+}
+.botoes-entrar-cadastrar span a:hover {
+    color:#efefee;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+main {
+    font-size: 2.3em;
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    color: #0F270F;
+}
+
+header {
+    background-color: #859479;
+    padding: 2em 2em 0.1em 2em;
+    font-size: 2.3em;
+}
+
+.header-top {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.icon-header{
+    width: 30px;
+    height: 30px;
+}
+.botoes-vendedor, .botoes-entrar-cadastrar {
+    display: flex;
+    gap: 2em;
+}
+
+.barra-pesquisa {
+    position: relative;
+    display: inline-block;
+}
+
+.barra-pesquisa img {
+    position: absolute;
+    width: 1em;
+    top: 0.4em;
+    margin-left: 16em;
+    cursor: pointer;
+}
+
+#input-pesquisa {
+    background-color: #f2f2f2;
+    border: none;
+    color: #37644e;
+    padding: 1em;
+    width: 30em;
+    border-radius: 2em;
+    outline: none;
+}
+
+#input-pesquisa:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Remove o botão de limpar ( X ) em campos de input do tipo search */
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+#logo {
+    width: 200px;
+    height: 60px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* para que os span fiquem com espaços entre eles */
+.header-bottom nav {
+    display: flex;
+    gap: 2em;
+}
+
+.header-bottom div {
+    display: flex;
+    gap: 2em;
+}
+
+.header-bottom div img {
+  width: 1em;
+  cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #0f270fbe;
+    height: 1px;
+    width: 100%;
+    margin: 2em auto;
+}
+
+.breadcrumbs {
+    color: #0F270F;
+}
+
+.breadcrumbs span {
+    color: #859479;
+}
+
+.info-breadcrumbs {
+    padding-left: 2em;
+    padding-top: 1em;
+}
+
+.titulo-font-marcellus {
+    font-family: 'Marcellus SC', serif;
+    margin-bottom: 50px;
+    color: #0F270F;
+    border-left: 5px solid #859479;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.images-footer {
+    /*display: grid;
+    grid-template-columns: auto auto auto;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+.box-images-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.images-footer div img {
+    width: 11em;
+    height: 10em;
+    cursor: pointer;
+}
+
+.images-footer div span {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #859479;
+    cursor: pointer;
+}
+
+.images-footer div span:hover{
+    color: #000000;
+}
+
+footer{
+    background-color: #0F270F;
+    font-size: 23px;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+footer h2{
+    font-family: 'Marcellus SC', serif;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-left-footer, .box-rigth-footer{
+    font-size: 20px;
+}
+
+.box-rigth-footer img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.box-rigth-footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+
+.space-list{
+    margin-top: 22%;
+}
+
+
+/*Estlos dos modais de login*/
+.fundo-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.modal{
+    width: 55%;
+    height: auto;
+    margin-top: 6%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.legenda{
+    padding: 2%;
+    visibility: v;
+}
+
+.box-modal{
+    width: 100%;
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.box-modal h3{
+    font-weight: normal;
+    color: black;
+    margin:  0;
+}
+
+.text-modal{
+    color: #859479;
+    margin-bottom: 2%;
+}
+
+.img-fechar{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin: 10px 10px 0 10px;
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+
+.img-google{
+    width: 253px;
+    margin: 2% 0;
+    cursor: pointer;
+}
+
+.input-login{
+    width: 384px;
+    height: 35px;
+    margin-bottom: 1%;
+    border-radius: 6px;
+    padding-left: 2%;
+    border: none;
+    color: black;
+}
+
+.link-ajuda{
+    width: 75%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.text-red{
+    color: #9B2D25;
+    cursor: pointer;
+}
+
+.text-gray{
+    color: gray;
+    cursor: pointer;
+}
+
+.box-modal input[type='button']{
+    width: 119px;
+    height: 35px;
+    background-color: #859479;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    margin: 2% 0;
+}
+
+/*Fim dos estlos dos modais de login*/
+
+
+@media screen and (min-width: 1080px) and (max-width: 1180px){
+   header{
+        font-size: 2em;
+    }
+
+    .barra-pesquisa img{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1080px){
+    header{
+        font-size: 14px;
+    }
+
+    #input-pesquisa {
+        width: 20em;
+        height: 30px;
+    }
+
+    .barra-pesquisa img{
+        display: none;
+    }
+
+    .icon-header{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    #box-principal{
+        display: none;
+    }
+
+    #box-principal-mobile{
+        display: block;
+    }
+
+    header{
+        font-size: 16px;
+    }
+
+    header .carrossel{
+        display: none;
+    }
+
+    .header-top {
+        display: block;
+    }
+
+    .botoes-vendedor{
+        font-size: 13px;
+        margin: 2em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box-pesquisa-icons-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .icons-mobile{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .header-top div img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .barra-pesquisa {
+        display: block;
+    }
+
+    .barra-pesquisa img{
+        display: none;
+    }
+
+    #input-pesquisa {
+        width: 20em;
+        height: 30px;
+    }
+
+    #logo {
+        width: 255px;
+        height: 76px;
+    }
+
+    .nav-pages-mobile{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .nav-pages-mobile span{
+        margin-bottom: 0.5em; 
+        padding-bottom: 0.5em;  
+        border-bottom: 1px solid black;
+    }
+
+    .nav-pages-mobile span:hover{
+        border-bottom: 1px solid white;
+    }
+
+    .box-logo-menu-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu-img{
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+
+    .box-menu-mobile{
+        display: none;
+    }
+    
+    footer{
+        font-size: 16px;
+    }
+    
+    .logo-footer img{
+        width: 150px;
+    }
+
+    .box-left-footer, .box-rigth-footer{
+        font-size: 11px;
+    }
+
+    .box-rigth-footer img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .modal{
+        width: 95%;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    .box-logo-menu-mobile{
+        margin: 0 3em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #input-pesquisa {
+        width: 10em;
+    }
+    .botoes-vendedor{
+        font-size: 10px;
+    }
+}
