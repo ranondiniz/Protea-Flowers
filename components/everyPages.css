@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 
 html, body {
     font-size: 10px;
@@ -13,13 +15,15 @@ html, body {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Scada', 'son-serif';
+    font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 300;
 }
+
 #box-principal-mobile{
-        display: none;
-    }
+    display: none;
+}
+
 .botoes-vendedor span, .botoes-vendedor span a, .botoes-entrar-cadastrar span, .botoes-entrar-cadastrar span a{
     color:#0F270F;
 }
@@ -61,17 +65,28 @@ main {
 }
 
 header {
+    
     background-color: #859479;
     padding: 2em 2em 0.1em 2em;
-    font-size: 2.3em;
+    font-size: 2em;
+
 }
+
+
+
 
 .header-top {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 1em;
 }
+
+.icons_paises{
+    cursor: pointer;
+}
+
 .icon-header{
     width: 30px;
     height: 30px;
@@ -90,7 +105,7 @@ header {
     position: absolute;
     width: 1em;
     top: 0.4em;
-    margin-left: 16em;
+    margin-left: 18em;
     cursor: pointer;
 }
 
@@ -140,12 +155,13 @@ header {
   cursor: pointer;
 }
 
+
 hr {
     border: none;
     border-top: 1px solid #0f270fbe;
     height: 1px;
     width: 100%;
-    margin: 2em auto;
+    margin: 1% auto;
 }
 
 .breadcrumbs {
@@ -514,11 +530,38 @@ footer ul li{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (min-width: 301px) and (max-width: 450px){
     #input-pesquisa {
         width: 10em;
     }
+
     .botoes-vendedor{
         font-size: 10px;
+    }
+
+    footer li, footer span{
+        font-size: 9px;
+    }
+
+    footer h2{
+        font-size: 18px;
+    }
+    
+    .logo-footer img{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    footer li, footer span{
+        font-size: 7px;
+    }
+
+    footer h2{
+        font-size: 18px;
+    }
+    
+    .logo-footer img{
+        width: 90px;
     }
 }
