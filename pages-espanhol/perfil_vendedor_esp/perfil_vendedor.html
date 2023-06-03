@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Vendedor - Protea Flowers</title>
+
+    <link rel="stylesheet" href="../../components/everyPages.css">
+    <link rel="stylesheet" href="perfil_vendedor.css">
+
+    <link rel="shortcut icon" href="../../components/images/favicon-2.png" type="image/x-icon">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../components/script.js"></script>
+</head>
+<body>
+    <header id="box-principal">
+        <div class="header-top">
+            <nav class="botoes-vendedor">
+                <span id="Central-vendedor" class="buttons">Centro de Vendedores</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+            </nav>
+            <div class="barra-pesquisa">
+                <img src="../../components/images/icon-search.png" alt="">
+                <input 
+                type="search" 
+                name="pesquisar" 
+                id="input-pesquisa"
+                placeholder="Buscar..." onclick="this.placeholder=''">
+            </div>
+            <nav class="botoes-entrar-cadastrar">
+                <span id="entrar" class="buttons"></span>
+                <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+            </nav>
+        </div>
+        <div class="header-bottom">
+            <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+            <nav>
+                <span class="buttons" style="color: #0F270F"><a href="../home/index.html">HOGAR</a></span>
+                <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+            </nav>
+            <div>
+                <img class="icon-header entrar" src="../../components/images/🦆 icon _person_.png" alt="Perfil">
+                <img class="icon-header" src="../../components/images/🦆 icon _bell_.png" alt="ícone de sino">
+                <a href="../carrinho_compras/carrinhoCompras.html">
+                    <img class="icon-header" src="../../components/images/🦆 icon _cart_.png" alt="Ícone de carrinho">
+                </a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+    <header id="box-principal-mobile">
+        <div class="box-logo-menu-mobile">
+            <img class="menu-img" src="../../components/images/meu.png">
+             <a href="../home/index.html">
+                <img id="logo" src="../../components/images/logo.png" alt="Logo da Protea Flowers">
+            </a>
+        </div>
+        <div class="box-menu-mobile">
+            <nav class="botoes-vendedor">
+                 <span class="buttons"><a href="../cadastro_cliente/cadastroCliente.html">Registro</a></span>
+                <span class="Central-vendedor buttons">Centro de Vendedores</span>
+                <span class="buttons"><a href="../cadastro_vendedor/cadastroVendedor.html">Conviértete en Vendedor</a></span>
+            </nav>
+            <div class="header-top">
+                <div class="box-pesquisa-icons-mobile">
+                    <div class="barra-pesquisa">
+                        <img src="../../components/images/icon-search.png" alt="">
+                        <input 
+                        type="search" 
+                        name="pesquisar" 
+                        id="input-pesquisa"
+                        placeholder="Buscar..." onclick="this.placeholder=''">
+                    </div>
+                     <div class="icons-mobile">
+                        <img class="icon-header entrar" src="../../components/images/🦆 icon _person_.png" alt="Ícone de pessoa">
+                        <img class="icon-header" src="../../components/images/🦆 icon _bell_.png" alt="ícone de sino">
+                        <a href="../carrinho_compras/carrinhoCompras.html">
+                            <img class="icon-header" src="../../components/images/🦆 icon _cart_.png" alt="Ícone de carrinho">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <nav class="nav-pages-mobile">
+                    <span class="buttons" style="color: #0F270F"><a href="../home/index.html">HOGAR</a></span>
+                    <span class="buttons"><a href="../produtos/produtos.html">PRODUCTOS</a></span>
+                    <span class="buttons"><a href="../catalogos/catalogos.html">CATÁLOGOS</a></span>
+                    <span class="buttons"><a href="../nossa_historia/nossaHistoria.html">NUESTRA HISTORIA</a></span>
+                    <span class="buttons"><a href="../contato/contato.html">CONTACTO</a></span>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--  Este header só será ativado quando as páginas estiverem no modo responsivo! -->
+
+
+
+    <main>
+        <div class="info-breadcrumbs">
+            <span class="breadcrumbs">Hogar | Centro de Vendedores |<span> Perfil del Vendedor</span></span>
+        </div>
+        <div class="container">
+            <div class="container-1">
+                <section id="perfil">
+                    <div id="perfil-responsivo">
+                        <div id="perfil-top">
+                            <img src="images/foto-perfil.png" alt="Foto de perfil">
+                            <h4>Hola, Francisco Ferreira!</h4>
+                            <span>franciscoferreira@gmail.com</span>
+                        </div>
+                        <div id="perfil-center">
+                            <span><img src="images/cartao 1.png" alt="Minha carteira">Mi billetera</span>
+                            <span><img src="images/localizacao 1.png" alt="Localização">Direcciones</span>
+                            <span><img src="images/configuracoes-cog 1.png" alt="Configurações">Ajustes</span>
+                            <span><img src="images/minhas-mensagens.png" alt="Mensagens">Mis mensajes</span>
+                            <span><img src="images/servico-de-registros.png" alt="Serviços de registro">Servicio de registros</span>
+                            <span><img src="images/central-de-ajuda.png" alt="Central de ajuda">Centro de ayuda</span>
+                        </div>
+                    </div>
+                        <div id="perfil-bottom">
+                            <a href="../home/index.html"><span>Salir</span></a>
+                            <span>Administrar Cuenta</span>
+                        </div>
+                    </section>
+                    <a id="button-semear" href="https://ead.senar.org.br/" target="_blank">
+                        <button>Plataforma SEMEAR</button>
+                    </a>
+            </div>
+            <div class="container-2">
+                    <section id="minhas-vendas">
+                        <span class="ver-mais">Verlo todo<img src="images/seta-direita 1.png" alt=""></span>
+                        <h3>Mis ventas</h3>
+                        <div id="row-2">
+                            <li>
+                                <img src="images/processando.png" alt="Pedidos em proce/ssamento">
+                                <span>Demanda</span>
+                            </li>
+                            <li>
+                                <img src="images/enviado.png" alt="Pedidos enviados">
+                                <span>Enviado</span>
+                            </li>
+                            <li>
+                                <img src="images/comentar.png" alt="Comentar">
+                                <span>Informes</span>
+                            </li>
+                            <li>
+                                <img src="images/devolucao.png" alt="Pedir devolução">
+                                <span>Devolver</span>
+                            </li>
+                        </div>
+                        <div id="itens">
+                            <h5>22 de Octubre de 2022 | 22:24</h5>
+                            <aside>
+                                <img src="images/flor.png" alt="flor">
+                                <span>60 unidades</span>
+                                <span>€600,00</span>
+                                <span>Enviado</span>
+                                <span>Detalles de venta</span>
+                            </aside>
+                        </div>
+                    </section>
+                    <a id="button-responsivo" href="../adicionar_produto/adicionar_produto.html">
+                        <button id="button-adicionarproduto"><img src="images/sinal-de-mais.png"><h3>Agregar producto</h3></button>
+                    </a>
+                    <section id="produtos-catalogados">
+                        <h3>Productos catalogados</h3>
+                        <div>
+                            <img src="images/astromelias-flores-tropicais.png" alt="Astromelias">
+                            <ol>
+                                <li>Atromelias</li>
+                                <li>Fecha de entrada: 18/05/2014</li>
+                                <li>Stock: disponible</li>
+                                <li>Valor Unitario: €10,00</li>
+                                <li>Cantidad vendida: 4.503</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <img src="images/heliconias.png" alt="heliconias">
+                            <ol>
+                                <li>Heliconia</li>
+                                <li>Fecha de entrada: 18/05/2020</li>
+                                <li>Stock: indisponible</li>
+                                <li>Valor Unitario: €10,00</li>
+                                <li>Cantidad vendida: 4.503</li>
+                            </ol>
+                        </span>
+                        </div>
+                        <span class="ver-mais">Ver más<img src="images/seta-direita 1.png" alt=""></span>
+                    </section>
+                        <section id="produtos-estoque">
+                            <h3>Productos en stock</h3>
+                            <div>
+                                <img src="images/bastao-do-imperador.png" alt="Bastão do imperador">
+                                <span>Antirio</span>
+                                <span>2.000 unidades en stock</span>
+                                <span>Último reinicio: 17/03/2023</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <img src="images/hibisco.png" alt="Hibisco">
+                                <span>Hibisco</span>
+                                <span>800 unidades en stock</span>
+                                <span>Último reinicio: 28/03/2023</span>
+                            </div>
+                            <span class="ver-mais">Ver más<img src="images/seta-direita 1.png">
+                </section>
+            </div>
+        </div>
+
+        <!--INICIO MODAL PARA TODAS AS TELAS-->
+
+        <section class="fundo-modal cliente-modal">
+            <div class="modal cliente">
+                <span class="legenda">Hogar | Entrar</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>ACCESO</h3>
+                    <br>
+                    <span class="text-modal">¡Bienvenido de nuevo a nuestro Jardín!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-esp.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Contraseña">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">¿Olvido la contraseña?</span>
+                            <span class="text-gray">¿Necesita ayuda?</span>
+                        </div>
+
+                        <input onclick="test2()" id="link2" type="button" name="" value="Entrar">
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="fundo-modal  vendedor-modal">
+            <div class="modal vendedor">
+                <span class="legenda">Hogar | Centro de Vendedores | Acceso</span>
+                <div class="box-modal">
+                    <img class="img-fechar" src="../../components/images/fechar.png">
+                    <div class="clear"></div><!-- Limpeza da flutuação -->
+                    <h3>INICIO DE SESIÓN DEL VENDEDOR</h3>
+                    <br>
+                    <span class="text-modal">¡Bienvenido de nuevo a nuestro Jardín!</span>
+                    <br>
+                    <img class="img-google" src="../../components/images/botão-google-esp.png">
+                    <form>
+                        <input class="input-login" type="e-mail" name="" placeholder="E-mail">
+                        <br>
+                        <input class="input-login" type="password" name="" placeholder="Contraseña">
+
+                        <div class="link-ajuda">
+                            <span class="text-red">¿Olvido la contraseña?</span>
+                            <span class="text-gray">¿Necesita ayuda?</span>
+                        </div>
+
+                        <input onclick="test();" id="link" type="button" name="" value="Entrar">
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--FIM MODAL PARA TODAS AS TELAS-->
+
+    </main>
+    <footer>
+        <h2>Póngase en contacto con nosotros para más información</h2>
+        <div class="box-footer">
+            <div class="box-left-footer">
+                <ul>
+                    <li>Calle de las Colheitas, 258-A, Apipucos</li>
+                    <li>Recife, PE - Brazil</li>
+                    <li>CEP: 10254-330</li>
+                    <br>
+                    <br>
+                    <li>P&F DECORACIÓN Y AMBIENTACIÓN</li>
+                    <li>LTDA 08.591.212/0004-07</li>
+                </ul>
+            </div>
+
+            <div class="logo-footer">
+                <img src="../../components/images/logo.png">
+            </div>
+           
+            <div class="box-rigth-footer">
+                <span>Encuéntranos en las redes sociales</span>
+                <ul>
+                    <li>
+                       <img src="../../components/images/facebook.png">
+                    </li>
+                    <li>
+                       <img src="../../components/images/instagram.png">
+                    </li>
+                    <li>
+                       <img src="../../components/images/whatsapp.png">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                       <img src="../../components/images/logotipo-do-pinterest.png">
+                    </li>
+                    <li>
+                       <img src="../../components/images/twitter.png">
+                    </li>
+                    <li>
+                       <img src="../../components/images/youtube.png">
+                    </li>
+                </ul>
+                <span>contato@proteaflowers.com.br</span>
+            </div>
+        </div>
+        
+    </footer>
+
+    
+</html>
