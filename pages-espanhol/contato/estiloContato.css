@@ -1,0 +1,116 @@
+.conteudo-c {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloco-c {
+    width: 50%;
+}
+
+.icon-c {
+    width: 1.5em;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5em;
+}
+
+.icon-link h4 {
+    color: #0F270F;
+    cursor: pointer;
+}
+
+.icon-link h4:hover {
+    color: #859479;
+    
+}
+
+.assinatura label {
+    color:#0F270F;
+    font-weight: 700;
+}
+
+#icon-input-assinar {
+    width: 0.95em;
+    
+}
+
+#input-assinatura {
+    background-color: #FFFFFF;
+    border: 1px solid #767676;
+    color: #37644e;
+    padding: 1.25em;
+    padding-left: 4em;
+    width: 35em;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+#input-assinatura:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+#botao-enviar {
+    background-color: #CF8368;
+    border: 1px solid #767676;
+    cursor: pointer;
+    padding: 1.25em;
+    width: 10em;
+    border-radius: 0.5em;
+}
+
+#input-botao {
+    display: flex;
+    flex-direction: row;
+}
+
+.bloco-c h3{
+    color:#0F270F;
+}
+
+.redes-sociais {
+    margin-top: 2em;
+}
+
+.icon-rs {
+    width: 2.5em;
+    cursor: pointer;
+}
+
+
+.icons-redes-sociais {
+    width: 75%;
+    /* como alinhar o grid? */
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 1.5em;
+}
+
+@media screen and (max-width: 850px){
+    .conteudo-c {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bloco-c {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .icon-link {
+        flex-direction: row;
+        padding-top: 1.5em;
+        align-items: center;
+    }
+
+    .icons-redes-sociais {
+        width: 100%;
+    }
+}
